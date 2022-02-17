@@ -1,3 +1,14 @@
+#scorm_toc_toggle,
+#scorm_navpanel,
+#scorm_toc {
+    display: none !important;
+}
+
+#scorm_content {
+    width: 100% !important;
+}
+
+
 /* Cambio del modelo de caja para maquetar teniendo 
 en cuenta border y padding dentro del tamaño de elementos */
 
@@ -19,10 +30,41 @@ html {
     src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
 }
 
+@font-face {
+    font-family: 'Century-Gothic';
+    src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: local('Gothic'), url(../fonts/GOTHIC.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicB';
+    src: local('GothicB'), url(../fonts/GOTHICB.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicB0';
+    src: local('GothicB0'), url(../fonts/GOTHICB0.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBI';
+    src: local('GothicBI'), url(../fonts/GOTHICBI.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicI';
+    src: local('GothicI'), url(../fonts/GOTHICI.TTF) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "MyriadPro-Regular", Verdana, sans-serif;
+    font-family: 'Century-Gothic';
+    position: relative;
 }
 
 
@@ -37,7 +79,89 @@ html {
     --text-color: #000;
     --first-color: #228b22;
     --second-color: #75c775;
+    --color-primary: #FFFF;
 }
+
+
+/*************************************/
+
+.Portada__fondo {
+    background-image: url(../assets/img_portada/tortuga.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+img.Portada__banner--img {
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+main.Portada {
+    position: relative;
+}
+
+img.footer--img {
+    width: 90%;
+}
+
+footer.footer {
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    margin: 0;
+    padding: 0;
+    height: 2.75rem;
+}
+
+h1.footer--text {
+    position: absolute;
+    font-size: 0.5rem;
+    top: 56%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+}
+
+h1.Portada--title {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+}
+
+hr.Portada--lineEnd {
+    position: absolute;
+    z-index: 3;
+    top: 56%;
+    left: 31%;
+    border-bottom: 1px solid var(--color-primary);
+    width: 44%;
+    transform: translate(-50%, -50%);
+}
+
+a.Portada__button {
+    position: absolute;
+    z-index: 4;
+    top: 73%;
+    left: 46%;
+    width: 36%;
+    transform: translate(-50%, -50%);
+}
+
+img.Portada__button--img {
+    width: 250px;
+}
+
+
+/*****************************************/
 
 
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
