@@ -1,0 +1,113 @@
+#scorm_toc_toggle,
+#scorm_navpanel,
+#scorm_toc {
+    display: none !important;
+}
+
+#scorm_content {
+    width: 100% !important;
+}
+
+
+/* Cambio del modelo de caja para maquetar teniendo 
+en cuenta border y padding dentro del tamaño de elementos */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+/* Personaliza tipografia para uso general */
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+
+@font-face {
+    font-family: 'Century-Gothic';
+    src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: local('Gothic'), url(../fonts/GOTHIC.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicB';
+    src: local('GothicB'), url(../fonts/GOTHICB.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicB0';
+    src: local('GothicB0'), url(../fonts/GOTHICB0.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBI';
+    src: local('GothicBI'), url(../fonts/GOTHICBI.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicI';
+    src: local('GothicI'), url(../fonts/GOTHICI.TTF) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century-Gothic';
+}
+
+body {
+    background-image: url(../assets/img_contenido/marca-de-agua-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Define variables globales para el estilo del RED */
+
+:root {
+    --title-size: 2.5rem;
+    --subtitle-size: 2rem;
+    --text-size: 1rem;
+    --title-color: #000;
+    --subtitle-color: #abc;
+    --text-color: #000;
+    --first-color: #228b22;
+    --second-color: #75c775;
+}
+
+
+/****** MEDIA QUERIES PARA COMPUTADORAS ******/
+
+@media screen and (max-width:1440px) {}
+
+
+/****** MEDIA QUERIES PARA PORTATILES ******/
+
+@media screen and (max-width:1366px) {}
+
+@media screen and (max-width:1024px) {}
+
+
+/****** MEDIA QUERIE PARA TABLETS ******/
+
+@media screen and (max-width:768px) {}
+
+
+/****** MEDIA QUERIES PARA CELULARES ******/
+
+@media screen and (max-width:425px) {}
+
+@media screen and (max-width:375px) {}
+
+@media screen and (max-width:320px) {}

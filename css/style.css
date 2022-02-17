@@ -1,3 +1,14 @@
+#scorm_toc_toggle,
+#scorm_navpanel,
+#scorm_toc {
+    display: none !important;
+}
+
+#scorm_content {
+    width: 100% !important;
+}
+
+
 /* Cambio del modelo de caja para maquetar teniendo 
 en cuenta border y padding dentro del tamaño de elementos */
 
@@ -11,6 +22,14 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    background-image: url(../assets/img_portada/tortuga-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
 
 /* Personaliza tipografia para uso general */
 
@@ -19,10 +38,41 @@ html {
     src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
 }
 
+@font-face {
+    font-family: 'Century-Gothic';
+    src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: local('Gothic'), url(../fonts/GOTHIC.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicB';
+    src: local('GothicB'), url(../fonts/GOTHICB.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicB0';
+    src: local('GothicB0'), url(../fonts/GOTHICB0.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicBI';
+    src: local('GothicBI'), url(../fonts/GOTHICBI.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothicI';
+    src: local('GothicI'), url(../fonts/GOTHICI.TTF) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "MyriadPro-Regular", Verdana, sans-serif;
+    font-family: 'Century-Gothic';
+    /* position: relative; */
 }
 
 
@@ -37,19 +87,148 @@ html {
     --text-color: #000;
     --first-color: #228b22;
     --second-color: #75c775;
+    --color-primary: #FFFF;
 }
+
+
+/*************************************/
+
+.Portada__fondo {
+    height: 100vh;
+}
+
+img.Portada__banner--img {
+    width: 45vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+img.Portada__log--img {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0px;
+    width: 25%;
+}
+
+main.Portada {
+    position: relative;
+}
+
+img.footer--img {
+    padding: 0;
+    width: 34.375rem;
+    margin: 0;
+}
+
+footer.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 3.5625rem;
+}
+
+h1.footer--text {
+    position: absolute;
+    font-size: 0.5rem;
+    top: 56%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+}
+
+h1.Portada--title {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+}
+
+hr.Portada--lineEnd {
+    position: absolute;
+    z-index: 3;
+    top: 56%;
+    left: 18%;
+    border-bottom: 1px solid var(--color-primary);
+    width: 24%;
+    transform: translate(-50%, -50%);
+}
+
+a.Portada__button {
+    position: absolute;
+    z-index: 4;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+img.Portada__button--img {
+    width: 50%;
+}
+
+
+/*****************************************/
 
 
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
 
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:1920px) {
+    h1.Portada--title {
+        font-size: 4.5rem;
+    }
+    img.Portada__button--img {
+        width: 75%;
+    }
+    a.Portada__button {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    h1.Portada--title {
+        font-size: 3.2rem;
+    }
+    img.Portada__button--img {
+        width: 60%;
+    }
+    a.Portada__button {
+        left: 30%;
+    }
+}
 
 
 /****** MEDIA QUERIES PARA PORTATILES ******/
 
-@media screen and (max-width:1366px) {}
+@media screen and (max-width:1366px) {
+    h1.Portada--title {
+        font-size: 2.5rem;
+    }
+    a.Portada__button {
+        left: 35%;
+    }
+    img.Portada__button--img {
+        width: 50%;
+    }
+}
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    h1.Portada--title {
+        font-size: 2.5rem;
+    }
+    a.Portada__button {
+        left: 35%;
+    }
+    img.Portada__button--img {
+        width: 50%;
+    }
+}
 
 
 /****** MEDIA QUERIE PARA TABLETS ******/
