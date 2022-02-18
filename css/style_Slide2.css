@@ -67,7 +67,7 @@ html {
 }
 
 body {
-    background-image: url(../assets/img_contenido/marca-de-agua-fondo.png);
+    background-image: url(../assets/img_contenido/fondo-transparente.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,6 +88,22 @@ body {
 
 
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
+
+header.Header__contenido {
+    display: flex;
+}
+
+img.Header__home--img {
+    width: 100px;
+}
+
+img.Header__logo--img {
+    width: 226px;
+}
+
+img.Header__barra--img {
+    width: 500px;
+}
 
 @media screen and (max-width:1440px) {}
 
