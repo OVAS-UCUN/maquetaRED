@@ -91,18 +91,25 @@ body {
 
 header.Header__contenido {
     display: flex;
+    height: 7.5rem;
 }
 
 img.Header__home--img {
-    width: 100px;
+    width: 6.25rem;
 }
 
 img.Header__logo--img {
-    width: 226px;
+    width: 14.125rem;
+    margin-left: 1.625rem;
 }
 
 img.Header__barra--img {
-    width: 500px;
+    width: 31.25rem;
+}
+
+figure.Header__barra {
+    padding: 1.125rem 1.25rem;
+    padding-left: 3.3125rem;
 }
 
 @media screen and (max-width:1440px) {}
