@@ -117,7 +117,7 @@ nav.Header__nav ul {
 nav.Header__nav li a {
     color: var(--color-primary);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -140,9 +140,9 @@ img.Header__menu--icon {
     position: absolute;
     z-index: 2;
     top: 48%;
-    left: 72%;
+    right: 5%;
     transform: translate(-50%, -50%);
-    width: 1.0625rem;
+    width: 3%;
     cursor: pointer;
 }
 
@@ -227,29 +227,34 @@ h4.Footer__content--title {
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
 
 @media screen and (max-width:1440px) {
+    nav.Header__nav li a {
+        font-size: 14px;
+    }
     img.Header__menu--icon {
-        left: 80%;
+        right: 2%;
     }
 }
 
 
 /****** MEDIA QUERIES PARA PORTATILES ******/
 
-@media (min-width:1200px) and (max-width:1366px) {
+@media screen and (max-width:1366px) {
+    .Header__logo--img {
+        width: 10%;
+        margin-left: 3%;
+    }
     h4.Footer__content--title {
         font-size: 10px;
     }
     img.Header__menu--icon {
-        left: 80%;
+        right: 8%;
+    }
+    .header__conteiner_menu {
+        width: 35%;
     }
 }
 
 @media screen and (max-width:1024px) {
-    img.Header__logo--img {
-        width: 100%;
-        margin-left: 0%;
-        object-fit: cover;
-    }
     a.Header__home {
         width: 121px;
     }
@@ -261,9 +266,6 @@ h4.Footer__content--title {
         width: 50%;
         left: 5%;
         top: -15%;
-    }
-    img.Header__menu--icon {
-        left: 83%;
     }
     h4.Footer__content--title {
         font-size: 10px;
