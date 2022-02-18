@@ -82,8 +82,9 @@ body {
     --title-color: #000;
     --subtitle-color: #abc;
     --text-color: #000;
-    --first-color: #228b22;
+    --first-color: #036d35;
     --second-color: #75c775;
+    --color-primary: #FFFF;
 }
 
 
@@ -111,6 +112,66 @@ figure.Header__barra {
     padding: 1.125rem 1.25rem;
     padding-left: 3.3125rem;
 }
+
+
+/* header nav**/
+
+.header__conteiner_menu {
+    position: relative;
+}
+
+nav.Header__nav {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+nav.Header__nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav.Header__nav li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+nav.Header__nav a {
+    padding: 0 10px;
+}
+
+nav.Header__nav ul li {
+    border-right: 1px solid var(--color-primary);
+}
+
+nav.Header__nav ul li:last-child {
+    border-right: 1px solid transparent;
+}
+
+img.Header__menu--icon {
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    width: 1.0625rem;
+    cursor: pointer;
+}
+
+nav.Header__nav ul li:hover {
+    background: var(--first-color);
+}
+
+
+/***/
 
 @media screen and (max-width:1440px) {}
 
