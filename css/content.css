@@ -1,3 +1,5 @@
+/* Se ocultan botones que trae por defecto SCORM */
+
 #scorm_toc_toggle,
 #scorm_navpanel,
 #scorm_toc {
@@ -58,7 +60,7 @@ body {
 }
 
 
-/****** MEDIA QUERIES PARA COMPUTADORAS ******/
+/*************************************/
 
 header.Header__contenido {
     display: flex;
@@ -186,7 +188,10 @@ h4.Footer__content--title {
 }
 
 
-/****/
+/*****************************************/
+
+
+/****** MEDIA QUERIES PARA COMPUTADORAS ******/
 
 @media screen and (max-width:1440px) {}
 

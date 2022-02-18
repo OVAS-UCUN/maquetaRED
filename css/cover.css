@@ -24,14 +24,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    background-image: url(../assets/img_portada/tortuga-fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
 
 /* Personaliza tipografia para uso general */
 
@@ -44,6 +36,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Century-Gothic';
+}
+
+body {
+    background-image: url(../assets/img_portada/tortuga-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 
