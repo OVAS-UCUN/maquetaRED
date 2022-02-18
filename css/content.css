@@ -1,0 +1,221 @@
+/* Se ocultan botones que trae por defecto SCORM */
+
+#scorm_toc_toggle,
+#scorm_navpanel,
+#scorm_toc {
+    display: none !important;
+}
+
+#scorm_content {
+    width: 100% !important;
+}
+
+
+/* Cambio del modelo de caja para maquetar teniendo 
+en cuenta border y padding dentro del tamaño de elementos */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+/* Personaliza tipografia para uso general */
+
+@font-face {
+    font-family: 'Century-Gothic';
+    src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century-Gothic';
+}
+
+body {
+    background-image: url(../assets/img_contenido/fondo-transparente.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Define variables globales para el estilo del RED */
+
+:root {
+    --title-size: 2.5rem;
+    --subtitle-size: 2rem;
+    --text-size: 1rem;
+    --title-color: #000;
+    --subtitle-color: #abc;
+    --text-color: #000;
+    --first-color: #036d35;
+    --second-color: #75c775;
+    --color-primary: #FFFF;
+}
+
+
+/*************************************/
+
+header.Header__contenido {
+    display: flex;
+    height: 7.5rem;
+}
+
+img.Header__home--img {
+    width: 70%;
+}
+
+img.Header__logo--img {
+    width: 75%;
+    margin-left: 5%;
+}
+
+img.Header__barra--img {
+    width: 60%;
+}
+
+figure.Header__barra {
+    padding: 1.125rem 1.25rem;
+    padding-left: 3.3125rem;
+}
+
+
+/* header nav**/
+
+.header__conteiner_menu {
+    position: relative;
+}
+
+nav.Header__nav {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+nav.Header__nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav.Header__nav li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+nav.Header__nav a {
+    padding: 0 10px;
+}
+
+nav.Header__nav ul li {
+    border-right: 1px solid var(--color-primary);
+}
+
+nav.Header__nav ul li:last-child {
+    border-right: 1px solid transparent;
+}
+
+img.Header__menu--icon {
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    width: 1.0625rem;
+    cursor: pointer;
+}
+
+nav.Header__nav ul li:hover {
+    background: var(--first-color);
+}
+
+.conteiner__loader {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+img.conteiner__loader--back {
+    width: 100px;
+}
+
+img.conteiner__loader--front {
+    width: 41px;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+
+/**Footer**/
+
+.Footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.Footer__content--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: url(../assets/img_contenido/footer.png) no-repeat;
+    background-size: 100% 50px;
+    height: 50px;
+}
+
+h4.Footer__content--title {
+    color: var(--color-primary) !important;
+    font-size: 14px;
+}
+
+
+/*****************************************/
+
+
+/****** MEDIA QUERIES PARA COMPUTADORAS ******/
+
+@media screen and (max-width:1440px) {}
+
+
+/****** MEDIA QUERIES PARA PORTATILES ******/
+
+@media (min-width:1200px) and (max-width:1366px) {
+    h4.Footer__content--title {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:1024px) {}
+
+
+/****** MEDIA QUERIE PARA TABLETS ******/
+
+@media screen and (max-width:768px) {}
+
+
+/****** MEDIA QUERIES PARA CELULARES ******/
+
+@media screen and (max-width:425px) {}
+
+@media screen and (max-width:375px) {}
+
+@media screen and (max-width:320px) {}

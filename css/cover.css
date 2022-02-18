@@ -1,3 +1,5 @@
+/* Se ocultan botones que trae por defecto SCORM */
+
 #scorm_toc_toggle,
 #scorm_navpanel,
 #scorm_toc {
@@ -22,57 +24,26 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    background-image: url(../assets/img_portada/tortuga-fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
 
 /* Personaliza tipografia para uso general */
-
-@font-face {
-    font-family: "MyriadPro-Regular";
-    src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
-}
 
 @font-face {
     font-family: 'Century-Gothic';
     src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: 'Gothic';
-    src: local('Gothic'), url(../fonts/GOTHIC.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicB';
-    src: local('GothicB'), url(../fonts/GOTHICB.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicB0';
-    src: local('GothicB0'), url(../fonts/GOTHICB0.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicBI';
-    src: local('GothicBI'), url(../fonts/GOTHICBI.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicI';
-    src: local('GothicI'), url(../fonts/GOTHICI.TTF) format('truetype');
-}
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Century-Gothic';
-    /* position: relative; */
+}
+
+body {
+    background-image: url(../assets/img_portada/tortuga-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -168,7 +139,7 @@ a.Portada__button {
     top: 80%;
     left: 25%;
     transform: translate(-50%, -50%);
-    width: 250px;
+    width: 300px;
 }
 
 img.Portada__button--img {
@@ -190,6 +161,9 @@ img.Portada__button--img {
 @media screen and (max-width:1440px) {
     h1.Portada--title {
         font-size: 3.2rem;
+    }
+    a.Portada__button {
+        width: 250px;
     }
 }
 
