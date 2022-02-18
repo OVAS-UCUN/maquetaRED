@@ -26,38 +26,8 @@ html {
 /* Personaliza tipografia para uso general */
 
 @font-face {
-    font-family: "MyriadPro-Regular";
-    src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
-}
-
-@font-face {
     font-family: 'Century-Gothic';
     src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Gothic';
-    src: local('Gothic'), url(../fonts/GOTHIC.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicB';
-    src: local('GothicB'), url(../fonts/GOTHICB.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicB0';
-    src: local('GothicB0'), url(../fonts/GOTHICB0.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicBI';
-    src: local('GothicBI'), url(../fonts/GOTHICBI.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'GothicI';
-    src: local('GothicI'), url(../fonts/GOTHICI.TTF) format('truetype');
 }
 
 * {
@@ -96,16 +66,16 @@ header.Header__contenido {
 }
 
 img.Header__home--img {
-    width: 6.25rem;
+    width: 70%;
 }
 
 img.Header__logo--img {
-    width: 14.125rem;
-    margin-left: 1.625rem;
+    width: 75%;
+    margin-left: 5%;
 }
 
 img.Header__barra--img {
-    width: 31.25rem;
+    width: 60%;
 }
 
 figure.Header__barra {
@@ -171,31 +141,30 @@ nav.Header__nav ul li:hover {
 }
 
 
-/***/
-
-
 /**Footer**/
 
-img.Footer__content--img {
-    width: 578px;
-    height: fit-content;
-    transform: translate(0, 169%);
+.conteiner__loader {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
 
-img.Footer__loader--back {
+img.conteiner__loader--back {
     width: 100px;
 }
 
-.conteiner__loader {
-    position: relative;
-}
-
-img.Footer__loader--front {
+img.conteiner__loader--front {
     width: 41px;
     position: absolute;
     top: 60%;
     left: 33%;
     transform: translate(-50%, -50%);
+}
+
+img.Footer__content--img {
+    width: 578px;
+    height: fit-content;
+    transform: translate(0, 169%);
 }
 
 footer.Footer__content {
@@ -233,8 +202,12 @@ h4.Footer__content--title {
 /****** MEDIA QUERIES PARA PORTATILES ******/
 
 @media (min-width:1200px) and (max-width:1366px) {
+    img.Header__home--img {
+        width: 6.25rem;
+    }
     img.Header__logo--img {
         margin-left: 160px;
+        width: 14.125rem;
     }
     footer.Footer__content {
         transform: translate(100%, 0px);
@@ -244,9 +217,6 @@ h4.Footer__content--title {
     }
     .img.Footer__content--img {
         transform: translate(0, 186%);
-    }
-    .conteiner__loader {
-        transform: translate(0, 9%);
     }
 }
 
