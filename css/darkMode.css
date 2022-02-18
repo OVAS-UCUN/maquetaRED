@@ -90,3 +90,9 @@
 .dark a {
     color: #017B3E;
 }
+
+@media only screen and (max-width:1024px) {
+    .night-light {
+        right: 40px;
+    }
+}
