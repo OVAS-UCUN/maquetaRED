@@ -2,7 +2,7 @@
 
 .night-light {
     position: fixed;
-    top: 15px;
+    top: 28px;
     right: 93px;
 }
 
@@ -91,8 +91,9 @@
     color: #017B3E;
 }
 
-@media only screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
     .night-light {
-        right: 40px;
+        top: 15px;
+        right: 68px;
     }
 }
