@@ -72,8 +72,14 @@ img.Header__home--img {
 }
 
 img.Header__logo--img {
-    width: 75%;
+    width: 100%;
     margin-left: 5%;
+}
+
+a.Header__logo {
+    width: 20%;
+    object-fit: cover;
+    margin-right: 10%;
 }
 
 img.Header__barra--img {
