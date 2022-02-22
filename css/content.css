@@ -72,15 +72,20 @@ img.Header__home--img {
 }
 
 img.Header__logo--img {
-    width: 100%;
-    margin-left: 5%;
+    /* width: 100%;
+    margin-left: 5%; */
+    width: 20%;
+    height: 175%;
+    margin-right: 10%;
+    object-fit: cover;
 }
 
-a.Header__logo {
+
+/* a.Header__logo {
     width: 20%;
     object-fit: cover;
     margin-right: 10%;
-}
+} */
 
 img.Header__barra--img {
     width: 60%;
@@ -239,6 +244,9 @@ h4.Footer__content--title {
     img.Header__menu--icon {
         right: 2%;
     }
+    img.Header__logo--img {
+        height: 134%;
+    }
 }
 
 
@@ -257,6 +265,9 @@ h4.Footer__content--title {
     }
     .header__conteiner_menu {
         width: 35%;
+    }
+    img.Header__logo--img {
+        height: 120%;
     }
 }
 
