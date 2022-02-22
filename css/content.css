@@ -329,6 +329,14 @@ h4.Footer__content--title {
         width: 25%;
         margin-left: 0;
     }
+    /*menu*/
+    img.Header__menu--icon {
+        right: 3%;
+    }
+    .header__conteiner_menu.animate__animated.animate__bounceInUp.animate__delay-1s {
+        width: 40%;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width:1024px) {
