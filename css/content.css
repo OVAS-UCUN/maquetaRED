@@ -327,6 +327,7 @@ h4.Footer__content--title {
     img.Header__logo--img {
         margin-right: 3%;
         width: 25%;
+        margin-left: 0;
     }
 }
 
