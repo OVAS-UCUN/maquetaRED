@@ -335,7 +335,7 @@ h4.Footer__content--title {
         right: 3%;
     }
     .header__conteiner_menu.animate__animated.animate__bounceInUp.animate__delay-1s {
-        width: 40%;
+        width: 48%;
         object-fit: cover;
     }
 }
@@ -366,9 +366,7 @@ h4.Footer__content--title {
     }
     /*menu*/
     img.Header__logo--img {
-        margin-right: 0;
-    }
-    img.Header__logo--img {
+        margin-right: -3%;
         height: 100%;
     }
 }
