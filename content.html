@@ -18,21 +18,20 @@
 
 <body>
     <header class="Header__contenido">
-        <a href="./index.html" class="Header__home">
+        <!-- <a href="./index.html" class="Header__home">
             <figure>
                 <img class="Header__home--img" src="./assets/img_contenido/home.png" alt="">
             </figure>
-        </a>
+        </a> -->
+        <div class="Header__home">
+            <img class="Header__home--fondo" src="./assets/img_contenido/contenedor_content.png" alt="">
+            <a href="./index.html">
+                <img class="Header__home--boton" src="./assets/img_contenido/boton_content.png" alt="">
+            </a>
+        </div>
 
-        <a href="https://www.ucundinamarca.edu.co/" class="Header__logo" target="_blank" rel="noopener noreferrer">
-            <figure>
-                <img class="Header__logo--img" src="./assets/img_contenido/logo-2.png" alt="">
-            </figure>
-        </a>
-        <div class="header__conteiner_menu">
-            <!-- <figure class="Header__barra">
-                <img class="Header__barra--img" src="./assets/img_contenido/barra.png" alt="">
-            </figure> -->
+        <img class="Header__logo--img" src="./assets/img_contenido/logo-dos.png" alt="">
+        <div class="header__conteiner_menu animate__animated animate__bounceInUp animate__delay-1s">
             <nav class="Header__nav">
                 <ul>
                     <li><a href=""> Vida marina </a></li>
@@ -74,7 +73,7 @@
                     </p>
                 </div>
                 <div class="container__content_right">
-                    <img src="./assets/img_contenido/Peces.png" alt="">
+                    <img class="container__content_right--img" src="./assets/img_contenido/Peces.png" alt="">
                 </div>
 
             </div>
@@ -84,6 +83,7 @@
         <div class="conteiner__loader">
             <img class="conteiner__loader--back" src="./assets/img_contenido/progreso_fondo.png" alt="">
             <img class="conteiner__loader--front" src="./assets/img_contenido/progreso-2.png" alt="">
+            <h1 class="conteiner__loader--num">10%</h1>
         </div>
     </main>
 
