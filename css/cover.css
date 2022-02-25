@@ -285,7 +285,7 @@ h1.Portada__estudiante {
     }
     hr.Portada--lineEnd {
         left: 27%;
-        width: 35%;
+        width: 29rem;
     }
     img.Portada__button--img1920 {
         display: none;
@@ -330,10 +330,10 @@ h1.Portada__estudiante {
         display: block;
         position: absolute;
         z-index: 5;
-        top: 87%;
+        top: 86%;
         left: 10%;
         transform: translate(-50%, -50%);
-        width: 4%;
+        width: 3%;
     }
 }
 
@@ -352,7 +352,7 @@ h1.Portada__estudiante {
         font-size: 0.6rem;
         top: -29px;
         left: 79%;
-        width: 33%;
+        width: 39em;
     }
     hr.Portada--lineEndAvatar {
         width: 11%;
@@ -373,17 +373,17 @@ h1.Portada__estudiante {
     h1.Portada--title {
         font-size: 3.4rem;
     }
-    h1.footer--text {
+    /* h1.footer--text {
         font-size: 0.6rem;
         top: -29px;
         left: 76%;
         width: 36%;
-    }
+    } */
     hr.Portada--lineEndAvatar {
         width: 13%;
     }
     hr.Portada--lineEnd {
-        width: 35%;
+        width: 22.5rem;
     }
 }
 
