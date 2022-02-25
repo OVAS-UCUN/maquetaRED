@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: url(../assets/img_contenido/fondo-transparente.png);
+    background-image: url(../assets/img_intro/fondo-intro.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,9 +34,19 @@ body {
 
 /*************************************/
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .aside {
     height: 100vh;
-    width: fit-content;
+    width: 32%;
+}
+
+.content {
+    width: 68%;
 }
 
 .aside__fame {
@@ -53,43 +63,62 @@ body {
 .aside__content {
     position: absolute;
     top: 40%;
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 .aside__content--title {
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .aside__content--line {
     border-bottom: 1px solid #fff;
     width: 26%;
+    margin: 10px 0 30px 10px;
 }
 
 .aside__content--text {
     margin: 20px 0;
     color: #fff;
-    width: 25%;
+    width: 26%;
+    font-size: 20px;
 }
 
 .aside__btn {
     display: flex;
     justify-content: start;
     align-items: center;
+    margin: 5% 0 5% 10%;
 }
 
 .aside__btn--text {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .aside__btn--icon {
-    width: 30px;
+    width: 60px;
     margin: 0 10px;
 }
 
 @media screen and (max-width:1366px) {
     .aside__logo {
         width: 60%;
+    }
+    .aside__content {
+        margin-left: 5%;
+    }
+    .aside__content--title {
+        font-size: 3rem;
+    }
+    .aside__content--text {
+        font-size: 16px;
+        width: 25%;
+    }
+    .aside__btn--text {
+        font-size: 1rem;
+    }
+    .aside__btn--icon {
+        width: 30px;
     }
 }
