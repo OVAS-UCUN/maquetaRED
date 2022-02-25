@@ -88,7 +88,10 @@ main {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 5% 0 5% 10%;
+    margin: 5% 0 0 10%;
+    cursor: pointer;
+    text-decoration: none;
+    width: 20%;
 }
 
 .aside__btn--text {
@@ -103,7 +106,7 @@ main {
 
 @media screen and (max-width:1366px) {
     .aside__logo {
-        width: 60%;
+        width: 80%;
     }
     .aside__content {
         margin-left: 5%;
@@ -111,14 +114,22 @@ main {
     .aside__content--title {
         font-size: 3rem;
     }
+    .aside__content--line {
+        margin: 10px 0 30px 5px;
+        width: 25.8%;
+    }
     .aside__content--text {
         font-size: 16px;
         width: 25%;
     }
+    .aside__btn {
+        margin: 3% 0 0 8%;
+        width: 18%;
+    }
     .aside__btn--text {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .aside__btn--icon {
-        width: 30px;
+        width: 40px;
     }
 }
