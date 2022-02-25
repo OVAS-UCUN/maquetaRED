@@ -1,0 +1,206 @@
+/* Cambio del modelo de caja para maquetar teniendo 
+en cuenta border y padding dentro del tamaño de elementos */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(../assets/img_intro/fondo-intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Personaliza tipografia para uso general */
+
+@font-face {
+    font-family: 'Century-Gothic';
+    src: local('Century-Gothic'), url(../fonts/CenturyGothic.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century-Gothic';
+}
+
+
+/*************************************/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside {
+    height: 100vh;
+    width: 32%;
+}
+
+.content {
+    width: 68%;
+}
+
+.aside__fame {
+    height: inherit;
+    position: fixed;
+    left: 0;
+    z-index: -1;
+}
+
+.aside__logo {
+    width: 90%;
+}
+
+.aside__content {
+    position: absolute;
+    top: 40%;
+    margin-left: 7%;
+}
+
+.aside__content--title {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.aside__content--line {
+    border-bottom: 1px solid #fff;
+    width: 26%;
+    margin: 10px 0 30px 10px;
+}
+
+.aside__content--text {
+    margin: 20px 0;
+    color: #fff;
+    width: 26%;
+    font-size: 1.5rem;
+}
+
+.aside__btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5% 0 0 10%;
+    cursor: pointer;
+    text-decoration: none;
+    width: 15%;
+}
+
+.aside__btn--text {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.aside__btn--icon {
+    width: 60px;
+    margin: 0 10px 0 20px;
+}
+
+@media screen and (max-width:1790px) {
+    .aside {
+        width: 30%;
+    }
+    .aside__logo {
+        width: 85%;
+    }
+    .content {
+        width: 70%;
+    }
+    .aside__content {
+        top: 38%;
+        margin-left: 3%;
+    }
+    .aside__content--line {
+        width: 25%;
+    }
+    .aside__btn {
+        margin: 2% 0 0 10%;
+    }
+}
+
+@media screen and (max-width:1511px) {
+    .aside {
+        width: 36%;
+    }
+    .content {
+        width: 64%;
+    }
+    .aside__content {
+        margin-left: 5%;
+    }
+    .aside__content--line {
+        width: 29%;
+    }
+    .aside__content--text {
+        width: 29%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .aside__logo {
+        width: 80%;
+    }
+    .aside__content {
+        margin-left: 5%;
+    }
+    .aside__content--title {
+        font-size: 3rem;
+    }
+    .aside__content--line {
+        margin: 10px 0 30px 5px;
+        width: 25.8%;
+    }
+    .aside__content--text {
+        font-size: 1rem;
+        width: 25%;
+    }
+    .aside__btn {
+        margin: 3% 0 0 8%;
+        width: 18%;
+    }
+    .aside__btn--text {
+        font-size: 1.5rem;
+    }
+    .aside__btn--icon {
+        width: 40px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:1248px) {
+    .aside__logo {
+        width: 85%;
+    }
+    .aside__content--text {
+        width: 28%;
+    }
+    .aside__content--line {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .aside {
+        width: 38%;
+    }
+    .content {
+        width: 62%;
+    }
+    .aside__fame {
+        width: 38%;
+    }
+    .aside__logo {
+        width: 100%;
+    }
+    .aside__content--line {
+        width: 33%;
+    }
+}
