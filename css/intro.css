@@ -47,6 +47,9 @@ main {
 
 .content {
     width: 68%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .aside__fame {
@@ -102,6 +105,16 @@ main {
 .aside__btn--icon {
     width: 60px;
     margin: 0 10px 0 20px;
+}
+
+.content__avatar {
+    width: 60%;
+}
+
+.content__audio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width:1774px) {
