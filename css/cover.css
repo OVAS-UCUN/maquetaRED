@@ -257,9 +257,9 @@ h1.Portada__estudiante {
 
 /****** MEDIA QUERIES PARA PORTATILES ******/
 
-@media screen and (max-width:1366px) {
+@media screen and (max-width:1231px) {
     h1.Portada--title {
-        font-size: 4.5rem;
+        font-size: 3.8rem;
         left: 25.5%;
     }
     body {
@@ -282,18 +282,18 @@ h1.Portada__estudiante {
     img.Portada__log1366--img {
         position: absolute;
         z-index: 3;
-        left: 0;
+        left: 1rem;
         top: 0px;
-        width: 32%;
+        width: 33%;
         display: block;
     }
     h1.Portada--title1 {
-        left: 25.5%;
-        font-size: 1.5rem;
+        left: 27%;
+        font-size: 1.4rem;
     }
     hr.Portada--lineEnd {
+        width: 25rem;
         left: 27%;
-        width: 29rem;
     }
     img.Portada__button--img1920 {
         display: none;
@@ -314,19 +314,13 @@ h1.Portada__estudiante {
         right: 0;
     }
     h1.footer--text {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         top: -29px;
-        left: 82%;
-        width: 32%;
-    }
-    hr.Portada--lineEndAvatar {
-        width: 10%;
+        left: 79%;
+        width: 39em;
     }
     h1.Portada__name {
         left: 13%;
-    }
-    hr.Portada--lineEndAvatar {
-        left: 13.5%;
     }
     h1.Portada__estudiante {
         left: 11.5%;
@@ -343,55 +337,42 @@ h1.Portada__estudiante {
         transform: translate(-50%, -50%);
         width: 3%;
     }
-}
-
-@media screen and (max-width:1280px) {
     a.Portada__button {
-        width: 320px;
-    }
-    h1.Portada--title1 {
-        left: 27%;
-        font-size: 1.4rem;
-    }
-    h1.Portada--title {
-        font-size: 3.8rem;
-    }
-    h1.footer--text {
-        font-size: 0.6rem;
-        top: -29px;
-        left: 79%;
-        width: 39em;
+        width: 32%;
+        left: 41%;
     }
     hr.Portada--lineEndAvatar {
         width: 11%;
-    }
-    hr.Portada--lineEnd {
-        width: 25rem;
+        left: 13.5%;
     }
 }
 
-@media screen and (max-width:1050px) {
-    /* h1.Portada--title {
-        font-size: 2.5rem;
-    } */
+@media screen and (max-width:952px) {
     h1.Portada--title1 {
-        left: 26%;
+        /* left: 26%; */
         font-size: 1.2rem;
     }
     h1.Portada--title {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
-    /* h1.footer--text {
-        font-size: 0.6rem;
-        top: -29px;
-        left: 76%;
-        width: 36%;
-    } */
     hr.Portada--lineEndAvatar {
         width: 13%;
     }
     hr.Portada--lineEnd {
-        width: 22.5rem;
+        width: 21.5rem;
+    }
+    img.Portada__log1366--img {
+        width: 38%;
+        left: 0;
+    }
+    h1.Portada__name {
+        left: 13.5%;
+    }
+    h1.footer--text {
+        font-size: 0.7rem;
+        top: -28px;
+        left: 74%;
+        width: 39em;
     }
 }
 
