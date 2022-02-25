@@ -222,10 +222,10 @@ h1.Portada__estudiante {
 
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
 
-@media screen and (max-width:1440px) {
-    /* a.Portada__button {
-        width: 250px;
-    } */
+@media screen and (max-width:1790px) {
+    img.Portada__banner1920--img {
+        width: 48vw;
+    }
     h1.Portada--title1 {
         font-size: 1.4rem;
     }
