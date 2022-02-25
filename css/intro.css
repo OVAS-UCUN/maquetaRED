@@ -104,6 +104,46 @@ main {
     margin: 0 10px 0 20px;
 }
 
+@media screen and (max-width:1790px) {
+    .aside {
+        width: 30%;
+    }
+    .aside__logo {
+        width: 85%;
+    }
+    .content {
+        width: 70%;
+    }
+    .aside__content {
+        top: 38%;
+        margin-left: 3%;
+    }
+    .aside__content--line {
+        width: 25%;
+    }
+    .aside__btn {
+        margin: 2% 0 0 10%;
+    }
+}
+
+@media screen and (max-width:1511px) {
+    .aside {
+        width: 36%;
+    }
+    .content {
+        width: 64%;
+    }
+    .aside__content {
+        margin-left: 5%;
+    }
+    .aside__content--line {
+        width: 29%;
+    }
+    .aside__content--text {
+        width: 29%;
+    }
+}
+
 @media screen and (max-width:1366px) {
     .aside__logo {
         width: 80%;
@@ -132,5 +172,35 @@ main {
     .aside__btn--icon {
         width: 40px;
         margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:1248px) {
+    .aside__logo {
+        width: 85%;
+    }
+    .aside__content--text {
+        width: 28%;
+    }
+    .aside__content--line {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .aside {
+        width: 38%;
+    }
+    .content {
+        width: 62%;
+    }
+    .aside__fame {
+        width: 38%;
+    }
+    .aside__logo {
+        width: 100%;
+    }
+    .aside__content--line {
+        width: 33%;
     }
 }
