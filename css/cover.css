@@ -314,6 +314,27 @@ h1.Portada__estudiante {
     hr.Portada--lineEndAvatar {
         width: 10%;
     }
+    h1.Portada__name {
+        left: 13%;
+    }
+    hr.Portada--lineEndAvatar {
+        left: 13.5%;
+    }
+    h1.Portada__estudiante {
+        left: 11.5%;
+    }
+    img.Portada__avatar1920--img {
+        display: none;
+    }
+    img.Portada__avatar1366--img {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: 87%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        width: 4%;
+    }
 }
 
 @media screen and (max-width:1280px) {
