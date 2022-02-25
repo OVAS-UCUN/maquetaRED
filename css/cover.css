@@ -70,7 +70,7 @@ body {
 }
 
 img.Portada__banner1920--img {
-    width: 55vw;
+    width: 48vw;
     height: 100vh;
     position: absolute;
     z-index: 1;
@@ -82,11 +82,16 @@ img.Portada__banner1366--img {
 }
 
 img.Portada__log1920--img {
-    position: absolute;
+    /* position: absolute;
     z-index: 3;
     left: 0;
     top: 0px;
-    width: 32%;
+    width: 32%; */
+    position: absolute;
+    z-index: 3;
+    left: 4rem;
+    top: 0px;
+    width: 23%;
 }
 
 img.Portada__log1366--img {
@@ -130,29 +135,29 @@ h1.Portada--title {
     position: absolute;
     z-index: 2;
     top: 54%;
-    left: 22%;
+    left: 20%;
     transform: translate(-50%, -50%);
     color: var(--color-primary);
-    font-size: 5.7rem;
+    font-size: 4.3rem;
 }
 
 h1.Portada--title1 {
     position: absolute;
     z-index: 2;
     top: 45%;
-    left: 21.5%;
+    left: 20.5%;
     transform: translate(-50%, -50%);
     color: var(--color-primary);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 hr.Portada--lineEnd {
     position: absolute;
     z-index: 3;
     top: 48%;
-    left: 22%;
+    left: 21.5%;
     border-bottom: 1px solid var(--color-primary);
-    width: 29%;
+    width: 26%;
     transform: translate(-50%, -50%);
 }
 
@@ -222,10 +227,7 @@ h1.Portada__estudiante {
 
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
 
-@media screen and (max-width:1790px) {
-    img.Portada__banner1920--img {
-        width: 48vw;
-    }
+@media screen and (max-width:1495px) {
     h1.Portada--title1 {
         font-size: 1.4rem;
     }
