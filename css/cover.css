@@ -357,6 +357,9 @@ h1.Portada__estudiante {
     hr.Portada--lineEndAvatar {
         width: 11%;
     }
+    hr.Portada--lineEnd {
+        width: 32%;
+    }
 }
 
 @media screen and (max-width:1050px) {
@@ -378,6 +381,9 @@ h1.Portada__estudiante {
     }
     hr.Portada--lineEndAvatar {
         width: 13%;
+    }
+    hr.Portada--lineEnd {
+        width: 35%;
     }
 }
 
