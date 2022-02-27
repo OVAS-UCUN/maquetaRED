@@ -2,8 +2,8 @@
 
 .night-light {
     position: fixed;
-    top: 3%;
-    right: 2%;
+    top: 5%;
+    right: 5%;
 }
 
 .night-light-label #night-light-checkbox {
@@ -89,4 +89,10 @@
 .dark h1,
 .dark a {
     color: #fff;
+}
+
+@media screen and (max-width:1231px) {
+    .night-light {
+        right: 3%;
+    }
 }
