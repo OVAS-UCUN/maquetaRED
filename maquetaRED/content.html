@@ -11,18 +11,22 @@
     <link rel="stylesheet" href="./css/content.css">
     <!-- Dark Mode -->
     <link rel="stylesheet" href="./css/darkMode.css">
-
     <!-- Animate.css library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- API SCORM -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/SCORM_API_wrapper.js"></script>
+    <script type="text/javascript" src="./js/SCOFunctions.js"></script>
 </head>
 
-<body>
+<body onunload="unloadPage(true)">
+    <script type="text/javascript">
+        document.body.className += " js";
+        jQuery(function() {
+            loadPage()
+        })
+    </script>
     <header class="Header__contenido">
-        <!-- <a href="./index.html" class="Header__home">
-            <figure>
-                <img class="Header__home--img" src="./assets/img_contenido/home.png" alt="">
-            </figure>
-        </a> -->
         <div class="Header__home">
             <img class="Header__home--fondo" src="./assets/img_contenido/contenedor_content.png" alt="">
             <a href="./index.html">
@@ -92,8 +96,9 @@
             <h4 class="Footer__content--title">Realizado con amor y dedicación por la U - Cundinamarca - Copyright © 2022</h4>
         </div>
     </footer>
-    <!-- Custom scripts for this template -->
-    <script src="./js/main.js"></script>
+
     <!-- Dark Mode -->
     <script src="./js/darkMode.js"></script>
+    <!-- USE API SCORM -->
+    <script src="./js/main.js"></script>
 </body>
