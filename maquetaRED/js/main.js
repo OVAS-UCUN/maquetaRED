@@ -4,8 +4,10 @@ function fillFieldUsername() {
     if (userFieldSCORM) {
         let getUsername = String(scorm.get("cmi.core.student_name"));
         if (getUsername !== "null") {
+            let name = getUsername.split(",")
+            let username = `${name[1]} ${name[0]}`;
             console.log("La API de SCORM conecta con el nombre del usuario");
-            userFieldSCORM.innerHTML = getUsername;
+            userFieldSCORM.innerHTML = username.trim();
         }
     }
 }
@@ -15,7 +17,9 @@ window.addEventListener("load", function() {
     fillFieldUsername();
 
     let nextBtn = document.getElementById('nextSlide');
-    nextBtn.addEventListener("click", function() {
-        doContinue("completed");
-    });
+    if (nextBtn) {
+        nextBtn.addEventListener("click", function() {
+            doContinue("completed");
+        });
+    }
 });
