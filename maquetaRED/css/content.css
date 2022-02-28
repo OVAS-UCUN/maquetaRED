@@ -355,7 +355,7 @@ h4.Footer__content--title {
     }
 }
 
-@media screen and (max-width:952px) {
+@media screen and (max-width:971px) {
     a.Header__logo {
         width: 190px;
     }

@@ -304,7 +304,7 @@ h1.Portada__estudiante {
         font-size: 0.6rem;
         top: -29px;
         left: 79%;
-        width: 39em;
+        width: 40em;
     }
     h1.Portada__name {
         left: 12%;
@@ -334,7 +334,7 @@ h1.Portada__estudiante {
     }
 }
 
-@media screen and (max-width:952px) {
+@media screen and (max-width:971px) {
     h1.Portada--title1 {
         /* left: 26%; */
         font-size: 1.2rem;
