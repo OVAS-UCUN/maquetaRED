@@ -114,7 +114,7 @@ main {
     align-items: center;
     position: fixed;
     top: 7%;
-    left: 21%;
+    left: 28%;
     width: 55%;
     background: url(../assets/img_intro/barra-menu.png) no-repeat;
     background-size: 100% 90px;
@@ -179,6 +179,9 @@ main {
     }
     .aside__btn {
         margin: 2% 0 0 5%;
+    }
+    .menu {
+        left: 21%;
     }
 }
 
