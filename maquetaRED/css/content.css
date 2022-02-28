@@ -286,7 +286,7 @@ h4.Footer__content--title {
 
 /****** MEDIA QUERIES PARA PORTATILES ******/
 
-@media screen and (max-width:1231px) {
+@media screen and (max-width:1294px) {
     img.Header__home_1920--fondo {
         display: none;
     }

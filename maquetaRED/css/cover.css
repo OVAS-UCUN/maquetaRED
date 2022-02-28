@@ -244,7 +244,7 @@ h1.Portada__estudiante {
 
 /****** MEDIA QUERIES PARA PORTATILES ******/
 
-@media screen and (max-width:1231px) {
+@media screen and (max-width:1294px) {
     h1.Portada--title {
         font-size: 3.8rem;
         left: 25.5%;
