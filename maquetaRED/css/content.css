@@ -1,3 +1,16 @@
+/* Se ocultan botones que trae por defecto SCORM */
+
+#scorm_toc_toggle,
+#scorm_navpanel,
+#scorm_toc {
+    display: none !important;
+}
+
+#scorm_content {
+    width: 100% !important;
+}
+
+
 /* Cambio del modelo de caja para maquetar teniendo 
 en cuenta border y padding dentro del tamaño de elementos */
 
@@ -54,10 +67,9 @@ header.Header__contenido {
     height: 7.5rem;
 }
 
-img.Header__logo--img {
-    width: 20%;
-    height: 175%;
-    margin-right: 10%;
+img.Header__logo1920--img {
+    height: 155%;
+    margin-right: 6%;
     object-fit: contain;
     margin-left: 4%;
 }
@@ -226,6 +238,12 @@ img.container__content_right--img {
 }
 
 
+/* img.container__content_right--img {
+    object-fit: cover;
+    height: 60vh;
+} */
+
+
 /**Footer**/
 
 .Footer__content {
@@ -378,3 +396,17 @@ h4.Footer__content--title {
         top: 62%;
     }
 }
+
+
+/****** MEDIA QUERIE PARA TABLETS ******/
+
+@media screen and (max-width:768px) {}
+
+
+/****** MEDIA QUERIES PARA CELULARES ******/
+
+@media screen and (max-width:425px) {}
+
+@media screen and (max-width:375px) {}
+
+@media screen and (max-width:320px) {}
