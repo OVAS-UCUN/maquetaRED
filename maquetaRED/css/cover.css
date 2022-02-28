@@ -182,7 +182,7 @@ h1.Portada__name {
     position: absolute;
     z-index: 5;
     top: 92%;
-    left: 12%;
+    left: 11%;
     transform: translate(-50%, -50%);
     color: var(--color-primary);
     font-size: 1.5rem;
@@ -307,7 +307,7 @@ h1.Portada__estudiante {
         width: 39em;
     }
     h1.Portada__name {
-        left: 13%;
+        left: 12%;
     }
     h1.Portada__estudiante {
         left: 11.5%;
@@ -353,7 +353,7 @@ h1.Portada__estudiante {
         left: 0;
     }
     h1.Portada__name {
-        left: 13.5%;
+        left: 12.5%;
     }
     h1.footer--text {
         font-size: 0.7rem;
