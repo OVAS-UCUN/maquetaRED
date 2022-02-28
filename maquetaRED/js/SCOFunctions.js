@@ -84,115 +84,6 @@ var exitPageStatus;
 var scorm = pipwerks.SCORM;
 
 
-<<<<<<< HEAD
-function loadPage()
-{
-	var result = scorm.init();
-	
-	var status = scorm.GetCompletionStatus();
-
-	if (status == "not attempted")
-	{
-		// the student is now attempting the lesson
-		scorm.SetCompletionStatus("unknown");
-		scorm.SetSuccessStatus("unknown")
-	}
-
-	exitPageStatus = false;
-	startTimer();
-}
-
-
-function startTimer()
-{
-   startDate = new Date().getTime();
-}
-
-function computeTime()
-{
-   if ( startDate != 0 )
-   {
-      var currentDate = new Date().getTime();
-      var elapsedMiliSeconds = (currentDate - startDate);
-      var formattedTime = pipwerks.UTILS.convertTotalMiliSeconds(elapsedMiliSeconds);
-   }
-   else
-   {
-      formattedTime = pipwerks.UTILS.convertTotalMiliSeconds(0);
-   }
-
-   scorm.SetSessionTime(formattedTime);
-}
-
-function doBack()
-{
-   scorm.SetExit("suspend");
-
-   computeTime();
-   exitPageStatus = true;
-   
-   var result;
-
-   result = scorm.save();
-
-	// NOTE: LMSFinish will unload the current SCO.  All processing
-	//       relative to the current page must be performed prior
-	//		 to calling LMSFinish.   
-   
-   result = scorm.quit();
-}
-
-function doContinue( status )
-{
-	// Reinitialize Exit to blank
-	scorm.SetExit("");
-
-	var mode = scorm.GetMode();
-
-	if ( mode != "review"  &&  mode != "browse" )
-	{ 
-		scorm.SetCompletionStatus(status);
-		var sucess_status = ""
-		switch(status) {
-			case "completed":
-				sucess_status = "passed";
-			case "incomplete":
-				sucess_status = "failed"
-			default:
-				success_status = status
-		}
-		scorm.SetSuccessStatus(success_status);
-	}
-
-	computeTime();
-	exitPageStatus = true;
-
-	var result;
-	result = scorm.save();
-	// NOTE: LMSFinish will unload the current SCO.  All processing
-	//       relative to the current page must be performed prior
-	//		 to calling LMSFinish.   
-
-	result = scorm.quit();
-}
-
-function doQuit()
-{
-	scorm.SetExit("suspend");
-
-	computeTime();
-	exitPageStatus = true;
-
-	var result;
-
-	result = scorm.save();
-
-	// NOTE: LMSFinish will unload the current SCO.  All processing
-	//       relative to the current page must be performed prior
-	//		 to calling LMSFinish.   
-
-	result = scorm.quit();
-=======
 function loadPage() {
     var result = scorm.init();
 
@@ -289,7 +180,6 @@ function doQuit() {
     //		 to calling LMSFinish.   
 
     result = scorm.quit();
->>>>>>> c79ba1f6d4a2956cbc4bff0712417da29c9e94da
 }
 
 /*******************************************************************************
@@ -316,54 +206,6 @@ function doQuit() {
 ** José Miguel Andonegi November 17
 **
 *******************************************************************************/
-<<<<<<< HEAD
-function unloadPage(isSCORM)
-{
-	
-	if (parent && !parent.mod_scorm_is_window_closing){
-		// #505 Issue
-		parent.mod_scorm_is_window_closing = true
-	}
-	
-	if (typeof isSCORM == "undefined"){
-		isSCORM = false;
-	}
-	//console.trace('exitPageStatus'+exitPageStatus);
-
-	var status;
-	if (exitPageStatus != true)
-	{
-		status = scorm.GetSuccessStatus();
-		// In SCORM12, information about completion and success is stored in the same place (cmi.core.lesson_status)
-		if (status!="passed" && status!="failed")
-		{
-			if(isSCORM==true)
-			{
-				scorm.SetCompletionStatus("incomplete");
-				scorm.SetSuccessStatus("failed")
-			}
-			else
-			{
-				scorm.SetCompletionStatus("completed");
-				scorm.SetSuccessStatus("passed")
-			}
-		}
-		doQuit();
-	}
-
-	// NOTE:  don't return anything that resembles a javascript
-	//		  string from this function or IE will take the
-	//		  liberty of displaying a confirm message box.
-}
-
-function goBack() {
-	pipwerks.nav.goBack();
-}
-
-function goForward() {
-	pipwerks.nav.goForward();
-}
-=======
 function unloadPage(isSCORM) {
 
     if (parent && !parent.mod_scorm_is_window_closing) {
@@ -404,4 +246,3 @@ function goBack() {
 function goForward() {
     pipwerks.nav.goForward();
 }
->>>>>>> c79ba1f6d4a2956cbc4bff0712417da29c9e94da
