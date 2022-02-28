@@ -46,6 +46,7 @@ main {
 }
 
 .content {
+    margin-top: 5%;
     width: 68%;
     display: flex;
     justify-content: center;
@@ -107,8 +108,49 @@ main {
     margin: 0 10px 0 20px;
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 7%;
+    left: 21%;
+    width: 55%;
+    background: url(../assets/img_intro/barra-menu.png) no-repeat;
+    background-size: 100% 90px;
+    height: 90px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.menu hr {
+    border-left: 1px solid #fff;
+    height: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li {
+    padding: 5px 10px;
+    font-size: 1.5rem;
+}
+
+.menu ul li:hover {
+    background: #6DAE2D;
+}
+
 .content__avatar {
-    width: 60%;
+    width: 50%;
 }
 
 .content__audio {
@@ -156,6 +198,13 @@ main {
     .aside__btn {
         margin: 2% 0 0 8%;
     }
+    .content__avatar {
+        width: 60%;
+    }
+    .menu {
+        left: 25%;
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:1366px) {
@@ -187,6 +236,19 @@ main {
         width: 40px;
         margin: 0 10px;
     }
+    .content {
+        margin-top: 10%;
+    }
+    .menu {
+        width: 60%;
+        background-size: 100% 80px;
+        height: 80px;
+        top: 8%;
+        left: 26%;
+    }
+    .menu ul li {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width:1231px) {
@@ -201,6 +263,12 @@ main {
     }
     .aside__content--text {
         width: 28%;
+    }
+    .content__avatar {
+        width: 75%;
+    }
+    .menu {
+        left: 31%;
     }
 }
 
@@ -219,5 +287,8 @@ main {
     }
     .aside__content--text {
         width: 34%;
+    }
+    .content__avatar {
+        width: 85%;
     }
 }
