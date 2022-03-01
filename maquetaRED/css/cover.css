@@ -56,7 +56,7 @@ body {
     height: 100vh;
 }
 
-img.Portada__banner1920--img {
+img.Portada__banner--img {
     width: 48vw;
     height: 100vh;
     position: absolute;
@@ -64,44 +64,23 @@ img.Portada__banner1920--img {
     top: 0;
 }
 
-img.Portada__banner1366--img {
-    display: none;
-}
-
-img.Portada__log1920--img {
-    /* position: absolute;
-    z-index: 3;
-    left: 0;
-    top: 0px;
-    width: 32%; */
+img.Portada__log--img {
     position: absolute;
     z-index: 3;
-    left: 4rem;
     top: 0px;
-    width: 23%;
-}
-
-img.Portada__log1366--img {
-    display: none;
+    width: 28%;
 }
 
 main.Portada {
     position: relative;
 }
 
-img.footer--img1920 {
+img.footer--img {
     padding: 0;
     margin: 0;
     position: absolute;
     right: 0;
     top: -96px;
-}
-
-img.footer--img1366 {
-    padding: 0;
-    width: 34.375rem;
-    margin: 0;
-    display: none;
 }
 
 footer.footer {
@@ -118,34 +97,38 @@ h1.footer--text {
     width: 37%;
 }
 
-h1.Portada--title {
+
+/*titulos*/
+
+.Portada__titulos {
     position: absolute;
     z-index: 2;
-    top: 54%;
-    left: 20%;
+    top: 50%;
+    left: 18%;
     transform: translate(-50%, -50%);
+}
+
+.Portada__titulos__direction {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+h1.Portada--title {
     color: var(--color-primary);
-    font-size: 4.3rem;
+    font-size: 5rem;
 }
 
 h1.Portada--title1 {
-    position: absolute;
-    z-index: 2;
-    top: 45%;
-    left: 20.5%;
-    transform: translate(-50%, -50%);
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
 
 hr.Portada--lineEnd {
-    position: absolute;
-    z-index: 3;
-    top: 48%;
-    left: 21.5%;
     border-bottom: 1px solid var(--color-primary);
-    width: 26%;
-    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 a.Portada__button {
@@ -154,15 +137,11 @@ a.Portada__button {
     top: 72%;
     left: 33%;
     transform: translate(-50%, -50%);
-    width: 25%;
+    width: 28%;
 }
 
-img.Portada__button--img1920 {
+img.Portada__button--img {
     width: 100%;
-}
-
-img.Portada__button--img1366 {
-    display: none;
 }
 
 img.Portada__avatar1920--img {
@@ -214,18 +193,32 @@ h1.Portada__estudiante {
 
 /****** MEDIA QUERIES PARA COMPUTADORAS ******/
 
-@media screen and (max-width:1495px) {
-    img.Portada__log1920--img {
-        left: 2rem;
-        width: 25%;
+@media screen and (max-width:1810px) {
+    img.Portada__banner--img {
+        width: 44vw;
+    }
+    img.Portada__log--img {
+        width: 22%;
+        left: 3em;
     }
     h1.Portada--title1 {
-        font-size: 1.3rem;
-        left: 21%;
+        font-size: 1.5rem;
     }
     h1.Portada--title {
-        font-size: 3.7rem;
-        left: 20.5%;
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (max-width:1525px) {
+    img.Portada__log--img {
+        width: 25%;
+        left: 0;
+    }
+    h1.Portada--title1 {
+        font-size: 1.4rem;
+    }
+    h1.Portada--title {
+        font-size: 3.8rem;
     }
     h1.footer--text {
         font-size: 1.1rem;
@@ -241,70 +234,38 @@ h1.Portada__estudiante {
     }
 }
 
-
-/****** MEDIA QUERIES PARA PORTATILES ******/
-
-@media screen and (max-width:1294px) {
-    h1.Portada--title {
-        font-size: 3.8rem;
-        left: 25.5%;
+@media screen and (max-width:1366px) {
+    img.Portada__banner--img {
+        width: 50vw;
     }
-    body {
-        background-image: url(../assets/img_portada/1366x768/fondo.png);
+    img.Portada__log--img {
+        width: 27%;
+        left: 1em;
     }
-    img.Portada__banner1920--img {
-        display: none;
-    }
-    img.Portada__banner1366--img {
-        display: block;
-        width: 61vw;
-        height: 100vh;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-    }
-    img.Portada__log1920--img {
-        display: none;
-    }
-    img.Portada__log1366--img {
-        position: absolute;
-        z-index: 3;
-        left: 1rem;
-        top: 0px;
-        width: 33%;
-        display: block;
-    }
-    h1.Portada--title1 {
-        left: 27%;
-        font-size: 1.4rem;
-    }
-    hr.Portada--lineEnd {
-        width: 25rem;
-        left: 27%;
-    }
-    img.Portada__button--img1920 {
-        display: none;
-    }
-    img.Portada__button--img1366 {
-        display: block;
-        width: 100%;
-    }
-    img.footer--img1920 {
-        display: none;
-    }
-    img.footer--img1366 {
-        display: block;
-        top: -55px;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        right: 0;
+    img.footer--img {
+        top: -81px;
+        width: 50rem;
     }
     h1.footer--text {
-        font-size: 0.6rem;
-        top: -29px;
-        left: 79%;
-        width: 40em;
+        font-size: 0.9em;
+        top: -44px;
+        width: 42%;
+    }
+    .Portada__titulos {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:1256px) {
+    img.Portada__banner--img {
+        width: 55vw;
+    }
+    img.Portada__log--img {
+        width: 31%;
+    }
+    a.Portada__button {
+        left: 38%;
+        width: 32%;
     }
     h1.Portada__name {
         left: 12%;
@@ -324,29 +285,28 @@ h1.Portada__estudiante {
         transform: translate(-50%, -50%);
         width: 3%;
     }
-    a.Portada__button {
-        width: 32%;
-        left: 41%;
-    }
     hr.Portada--lineEndAvatar {
         width: 11%;
         left: 13.5%;
     }
+    h1.footer--text {
+        width: 46%;
+    }
 }
 
 @media screen and (max-width:971px) {
+    img.Portada__log--img {
+        width: 35%;
+        left: -1em;
+    }
     h1.Portada--title1 {
-        /* left: 26%; */
         font-size: 1.2rem;
     }
     h1.Portada--title {
-        font-size: 3.2rem;
+        font-size: 3.4rem;
     }
     hr.Portada--lineEndAvatar {
         width: 13%;
-    }
-    hr.Portada--lineEnd {
-        width: 21.5rem;
     }
     img.Portada__log1366--img {
         width: 38%;
@@ -355,10 +315,13 @@ h1.Portada__estudiante {
     h1.Portada__name {
         left: 12.5%;
     }
+    img.footer--img {
+        top: -61px;
+        width: 38rem;
+    }
     h1.footer--text {
-        font-size: 0.7rem;
-        top: -28px;
-        left: 74%;
-        width: 39em;
+        width: 53%;
+        font-size: 0.8em;
+        top: -30px;
     }
 }
