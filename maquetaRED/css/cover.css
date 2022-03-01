@@ -35,21 +35,6 @@ body {
 }
 
 
-/* Define variables globales para el estilo del RED */
-
-:root {
-    --title-size: 2.5rem;
-    --subtitle-size: 2rem;
-    --text-size: 1rem;
-    --title-color: #000;
-    --subtitle-color: #abc;
-    --text-color: #000;
-    --first-color: #228b22;
-    --second-color: #75c775;
-    --color-primary: #FFFF;
-}
-
-
 /*************************************/
 
 .Portada__fondo {
@@ -93,7 +78,7 @@ h1.footer--text {
     top: -44px;
     left: 78%;
     transform: translate(-50%, -50%);
-    color: var(--color-primary);
+    color: #FFFF;
     width: 37%;
 }
 
@@ -116,18 +101,18 @@ h1.footer--text {
 }
 
 h1.Portada--title {
-    color: var(--color-primary);
+    color: #FFFF;
     font-size: 5rem;
 }
 
 h1.Portada--title1 {
-    color: var(--color-primary);
+    color: #FFFF;
     font-size: 1.7rem;
     margin-bottom: 10px;
 }
 
 hr.Portada--lineEnd {
-    border-bottom: 1px solid var(--color-primary);
+    border-bottom: 1px solid #FFFF;
     width: 100%;
 }
 
@@ -170,17 +155,17 @@ img.Portada__avatar--img {
 }
 
 h1.Portada__name {
-    color: var(--color-primary);
+    color: #FFFF;
     font-size: 1.6rem;
 }
 
 hr.Portada--lineEndAvatar {
-    border-bottom: 1px solid var(--color-primary);
+    border-bottom: 1px solid #FFFF;
     width: 100%;
 }
 
 h1.Portada__estudiante {
-    color: var(--color-primary);
+    color: #FFFF;
     font-size: 1.2rem;
 }
 
@@ -306,17 +291,3 @@ h1.Portada__estudiante {
         font-size: 1rem;
     }
 }
-
-
-/****** MEDIA QUERIE PARA TABLETS ******/
-
-@media screen and (max-width:768px) {}
-
-
-/****** MEDIA QUERIES PARA CELULARES ******/
-
-@media screen and (max-width:425px) {}
-
-@media screen and (max-width:375px) {}
-
-@media screen and (max-width:320px) {}
