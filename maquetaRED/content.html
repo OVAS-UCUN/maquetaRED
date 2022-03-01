@@ -29,27 +29,36 @@
         })
     </script>
     <header class="Header__contenido">
-        <div class="Header__home">
-            <img class="Header__home--fondo" src="./assets/img_contenido/contenedor_content.png" alt="">
+        <div class="Header__home animate__animated animate__bounce animate__delay-1s">
+            <img class="Header__home--fondo" src="./assets/img_contenido/pieza-boton.png" alt="">
             <a href="./index.html">
-                <img class="Header__home--boton" src="./assets/img_contenido/boton_content.png" alt="">
+                <img class="Header__home--boton" src="./assets/img_contenido/boton.png" alt="">
             </a>
         </div>
 
-        <img class="Header__logo--img" src="./assets/img_contenido/logo-dos.png" alt="">
-        <div class="header__conteiner_menu animate__animated animate__bounceInUp animate__delay-1s">
+        <img class="Header__logo--img animate__animated animate__backInDown" src="./assets/img_contenido/logo.png" alt="">
+        <div class="header__conteiner_menu animate__animated animate__backInDown">
             <nav class="Header__nav">
                 <ul>
                     <li><a href=""> Vida marina </a></li>
                     <li><a href=""> Corales </a></li>
                     <li><a href=""> Rúbricas </a></li>
-                    <li><a href=""> Rúbricas </a></li>
+                    <li><a href=""> Herramientas </a></li>
                 </ul>
             </nav>
-            <img class="Header__menu--icon" src="./assets/img_contenido/icon-menu.png" alt="">
+            <img class="Header__menu--icon" id="menu_desplegable" src="./assets/img_contenido/botones-menu.png" alt="">
+            <div class="Header__submenu">
+                <nav class="Header__submenu__nav">
+                    <ul>
+                        <li><a href=""> Herramientas </a></li>
+                        <li><a href=""> Imágenes </a></li>
+                        <li><a href=""> Audios </a></li>
+                        <li><a href=""> e-libro </a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <!-- <h2>Iniciando maquetación del recurso educativo...</h2> -->
         <div class="night-light">
             <label for="night-light-checkbox" class="night-light-label">
                 <input type="checkbox" id="night-light-checkbox">
@@ -70,12 +79,11 @@
     <main>
 
         <div class="container__content">
-            <div class="sub_content">
+            <div class="sub_content animate__animated animate__fadeIn animate__delay-2s">
                 <div class="container__content_left">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo obcaecati officiis dolore voluptatem iure recusandae commodi a voluptate corporis, accusantium consectetur, natus beatae molestiae repudiandae exercitationem. Fuga, atque exercitationem?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas corrupti dignissimos? Beatae optio in, reprehenderit voluptatibus saepe nam at provident quos ad sunt dolore? Dicta at architecto molestias autem! Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Aliquid non porro ipsum unde architecto cupiditate voluptatem velit ullam magni voluptate minima distinctio, vero totam rerum placeat id, libero ex tenetur?
                     </p>
                 </div>
                 <div class="container__content_right">
@@ -87,18 +95,17 @@
         </div>
 
         <div class="conteiner__loader">
-            <img class="conteiner__loader--back" src="./assets/img_contenido/progreso_fondo.png" alt="">
-            <img class="conteiner__loader--front" src="./assets/img_contenido/progreso-2.png" alt="">
-            <h1 class="conteiner__loader--num">10%</h1>
+            <img class="conteiner__loader--back" src="./assets/img_contenido/pieza-back-spiner.png" alt="">
+            <img class="conteiner__loader--front" src="./assets/img_contenido/spinner-50.png" alt="">
+            <h1 class="conteiner__loader--num">50%</h1>
         </div>
     </main>
 
     <footer class="Footer__content">
         <div class="Footer__content--img">
-            <h4 class="Footer__content--title">Realizado con amor y dedicación por la U - Cundinamarca - Copyright © 2022</h4>
+            <h4 class="Footer__content--title">Realizado con aprecio y dedicación por la u - Cundinamarca - Copyright © 2022</h4>
         </div>
     </footer>
-
     <!-- Dark Mode -->
     <script src="./js/darkMode.js"></script>
     <!-- USE API SCORM -->
