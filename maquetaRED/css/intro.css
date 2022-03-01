@@ -159,7 +159,7 @@ main {
     justify-content: center;
 }
 
-@media screen and (max-width:1774px) {
+@media screen and (max-width:1810px) {
     .aside {
         width: 25%;
     }
@@ -185,7 +185,7 @@ main {
     }
 }
 
-@media screen and (max-width:1495px) {
+@media screen and (max-width:1525px) {
     .aside {
         width: 30%;
     }
@@ -254,7 +254,7 @@ main {
     }
 }
 
-@media screen and (max-width:1231px) {
+@media screen and (max-width:1256px) {
     .aside {
         width: 36%;
     }
@@ -275,7 +275,7 @@ main {
     }
 }
 
-@media screen and (max-width:952px) {
+@media screen and (max-width:971px) {
     .aside__fame {
         width: 40%;
     }
