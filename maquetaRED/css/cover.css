@@ -144,45 +144,46 @@ img.Portada__button--img {
     width: 100%;
 }
 
-img.Portada__avatar1920--img {
+
+/**name student**/
+
+.contain_name_student {
     position: absolute;
-    z-index: 5;
-    top: 85%;
-    left: 9%;
-    transform: translate(-50%, -50%);
-    width: 3%;
+    z-index: 3;
+    top: 73%;
+    /* left: 9%; */
+    left: 10%;
+    transform: translate(-50%, 50%);
 }
 
-img.Portada__avatar1366--img {
-    display: none;
+.sub_contain_name_student {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+img.Portada__avatar--img {
+    width: 50px;
+    padding-bottom: 10px;
 }
 
 h1.Portada__name {
-    position: absolute;
-    z-index: 5;
-    top: 92%;
-    left: 11%;
-    transform: translate(-50%, -50%);
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    text-transform: lowercase;
+}
+
+h1.Portada__name:first-letter {
+    text-transform: uppercase;
 }
 
 hr.Portada--lineEndAvatar {
-    position: absolute;
-    z-index: 5;
-    top: 94%;
-    left: 12.5%;
     border-bottom: 1px solid var(--color-primary);
-    width: 10%;
-    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 h1.Portada__estudiante {
-    position: absolute;
-    z-index: 5;
-    top: 95.5%;
-    left: 10.5%;
-    transform: translate(-50%, -50%);
     color: var(--color-primary);
     font-size: 1.2rem;
 }
@@ -207,6 +208,12 @@ h1.Portada__estudiante {
     h1.Portada--title {
         font-size: 4.2rem;
     }
+    .contain_name_student {
+        top: 65%;
+    }
+    h1.Portada__name {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width:1525px) {
@@ -225,12 +232,6 @@ h1.Portada__estudiante {
         top: -44px;
         left: 72%;
         width: 48%;
-    }
-    h1.Portada__name {
-        font-size: 1.2rem;
-    }
-    h1.Portada__estudiante {
-        font-size: 1rem;
     }
 }
 
@@ -254,6 +255,12 @@ h1.Portada__estudiante {
     .Portada__titulos {
         left: 20%;
     }
+    h1.Portada__name {
+        font-size: 1.2rem;
+    }
+    .contain_name_student {
+        left: 12%;
+    }
 }
 
 @media screen and (max-width:1256px) {
@@ -266,28 +273,6 @@ h1.Portada__estudiante {
     a.Portada__button {
         left: 38%;
         width: 32%;
-    }
-    h1.Portada__name {
-        left: 12%;
-    }
-    h1.Portada__estudiante {
-        left: 11.5%;
-    }
-    img.Portada__avatar1920--img {
-        display: none;
-    }
-    img.Portada__avatar1366--img {
-        display: block;
-        position: absolute;
-        z-index: 5;
-        top: 86%;
-        left: 10%;
-        transform: translate(-50%, -50%);
-        width: 3%;
-    }
-    hr.Portada--lineEndAvatar {
-        width: 11%;
-        left: 13.5%;
     }
     h1.footer--text {
         width: 46%;
@@ -305,15 +290,9 @@ h1.Portada__estudiante {
     h1.Portada--title {
         font-size: 3.4rem;
     }
-    hr.Portada--lineEndAvatar {
-        width: 13%;
-    }
     img.Portada__log1366--img {
         width: 38%;
         left: 0;
-    }
-    h1.Portada__name {
-        left: 12.5%;
     }
     img.footer--img {
         top: -61px;
@@ -323,5 +302,8 @@ h1.Portada__estudiante {
         width: 53%;
         font-size: 0.8em;
         top: -30px;
+    }
+    h1.Portada__name {
+        font-size: 1rem;
     }
 }
