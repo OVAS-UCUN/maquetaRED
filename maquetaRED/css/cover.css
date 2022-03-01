@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background-image: url(../assets/img_portada/1920x1080/fondo.png);
+    background-image: url(../assets/img_portada/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: right; */
@@ -171,11 +171,6 @@ img.Portada__avatar--img {
 h1.Portada__name {
     color: var(--color-primary);
     font-size: 1.6rem;
-    text-transform: lowercase;
-}
-
-h1.Portada__name:first-letter {
-    text-transform: uppercase;
 }
 
 hr.Portada--lineEndAvatar {
@@ -307,3 +302,17 @@ h1.Portada__estudiante {
         font-size: 1rem;
     }
 }
+
+
+/****** MEDIA QUERIE PARA TABLETS ******/
+
+@media screen and (max-width:768px) {}
+
+
+/****** MEDIA QUERIES PARA CELULARES ******/
+
+@media screen and (max-width:425px) {}
+
+@media screen and (max-width:375px) {}
+
+@media screen and (max-width:320px) {}
