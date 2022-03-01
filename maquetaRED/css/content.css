@@ -296,7 +296,7 @@ h4.Footer__content--title {
     .Header__home {
         margin-right: 0;
     }
-    .header__conteiner_menu.animate__animated.animate__backInDown.animate__delay-1s {
+    .header__conteiner_menu.animate__animated.animate__backInDown {
         width: 48%;
         object-fit: cover;
     }
