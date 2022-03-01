@@ -14,5 +14,7 @@ style.innerHTML = `
     width: 100% !important;
     height: 100% !important;
 }
+
+
 `;
 parent.document.head.appendChild(style);
