@@ -15,7 +15,7 @@ style.innerHTML = `
     height: 100% !important;
 }
 
-@media only screen and (max-width: 1810px) and (min-width: 1525px) {
+@media only screen and (max-width: 1920px) and (min-width: 1525px) {
     #page-mod-scorm-player #scormpage #scorm_content {
         height: 800px !important;
     }

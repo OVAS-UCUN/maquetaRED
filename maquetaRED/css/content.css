@@ -149,14 +149,13 @@ nav.Header__nav ul li:hover {
     top: 80%;
 }
 
-
-/* nav.Header__submenu ul {
+nav.Header__submenu__nav ul {
     list-style: none;
 }
 
-nav.Header__submenu li a {
+nav.Header__submenu__nav li a {
     text-decoration: none;
-} */
+}
 
 
 /**Loader footer**/
