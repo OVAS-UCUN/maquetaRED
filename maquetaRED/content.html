@@ -46,17 +46,8 @@
                     <li><a href=""> Herramientas </a></li>
                 </ul>
             </nav>
-            <img class="Header__menu--icon" id="menu_desplegable" src="./assets/img_contenido/botones-menu.png" alt="">
-            <div class="Header__submenu">
-                <nav class="Header__submenu__nav">
-                    <ul>
-                        <li><a href=""> Herramientas </a></li>
-                        <li><a href=""> Imágenes </a></li>
-                        <li><a href=""> Audios </a></li>
-                        <li><a href=""> e-libro </a></li>
-                    </ul>
-                </nav>
-            </div>
+            <img class="Header__menu--icon" id="menu_desplegable" tabindex="0" role="button" src="./assets/img_contenido/botones-menu.png" alt="">
+
         </div>
 
         <div class="night-light">
@@ -76,7 +67,7 @@
 
     </header>
 
-    <main>
+    <main class="main_content">
 
         <div class="container__content">
             <div class="sub_content animate__animated animate__fadeIn animate__delay-2s">
@@ -91,7 +82,16 @@
                 </div>
 
             </div>
-
+            <div class="Header__submenu">
+                <nav class="Header__submenu__nav">
+                    <ul>
+                        <li><a href=""> Herramientas </a></li>
+                        <li><a href=""> Imágenes </a></li>
+                        <li><a href=""> Audios </a></li>
+                        <li><a href=""> e-libro </a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
         <div class="conteiner__loader">
@@ -110,4 +110,6 @@
     <script src="./js/darkMode.js"></script>
     <!-- USE API SCORM -->
     <script src="./js/main.js"></script>
+
+    <script src="./js/menu.js"></script>
 </body>
