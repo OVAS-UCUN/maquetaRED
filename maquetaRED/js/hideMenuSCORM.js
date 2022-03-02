@@ -14,5 +14,16 @@ style.innerHTML = `
     width: 100% !important;
     height: 100% !important;
 }
+
+@media only screen and (max-width: 1920px) and (min-width: 1525px) {
+    #page-mod-scorm-player #scormpage #scorm_content {
+        height: 800px !important;
+    }
+    
+    #scorm_layout{
+        height: 760px !important;
+    }
+}
+
 `;
 parent.document.head.appendChild(style);

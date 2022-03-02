@@ -159,33 +159,36 @@ main {
     justify-content: center;
 }
 
-@media screen and (max-width:1774px) {
+@media screen and (max-width:1810px) {
     .aside {
         width: 25%;
     }
     .content {
         width: 75%;
     }
+    .aside__logo {
+        width: 100%;
+    }
     .aside__content {
         top: 38%;
-        margin-left: 3%;
+        margin-left: 5%;
     }
     .aside__content--line {
-        width: 21%;
+        width: 24%;
     }
     .aside__content--text {
-        width: 21%;
+        width: 23%;
         font-size: 1.2rem;
     }
     .aside__btn {
-        margin: 2% 0 0 5%;
+        margin: 2% 0 0 8%;
     }
     .menu {
-        left: 21%;
+        left: 25%;
     }
 }
 
-@media screen and (max-width:1495px) {
+@media screen and (max-width:1525px) {
     .aside {
         width: 30%;
     }
@@ -193,19 +196,19 @@ main {
         width: 70%;
     }
     .aside__content--line {
-        width: 26%;
+        width: 30%;
     }
     .aside__content--text {
-        width: 24%;
+        width: 27%;
     }
     .aside__btn {
-        margin: 2% 0 0 8%;
+        margin: 2% 0 0 10%;
     }
     .content__avatar {
         width: 60%;
     }
     .menu {
-        left: 25%;
+        left: 30%;
         width: 60%;
     }
 }
@@ -254,7 +257,7 @@ main {
     }
 }
 
-@media screen and (max-width:1231px) {
+@media screen and (max-width:1256px) {
     .aside {
         width: 36%;
     }
@@ -275,7 +278,7 @@ main {
     }
 }
 
-@media screen and (max-width:952px) {
+@media screen and (max-width:971px) {
     .aside__fame {
         width: 40%;
     }
