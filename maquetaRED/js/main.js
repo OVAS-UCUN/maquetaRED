@@ -1,6 +1,11 @@
 function firstLetterUp(string) {
     string = string.trim().toLowerCase();
-    return string.charAt(0).toUpperCase() + string.slice(1);
+    let words = string.split(' ');
+    if (words.length == 2) {
+        return `${words[0].charAt(0).toUpperCase()}${words[0].slice(1)} ${words[1].charAt(0).toUpperCase()}${words[1].slice(1)}`;
+    } else {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
 }
 
 
