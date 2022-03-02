@@ -183,7 +183,7 @@ nav.Header__submenu__nav ul li:hover {
 
 /*menu activado*/
 
-.Header__submenu.is-active {
+.Header__submenu.is-active_hover {
     display: block;
 }
 
